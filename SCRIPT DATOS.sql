@@ -1,0 +1,120 @@
+-- Insertar categorías 
+INSERT INTO Categorias (nombre, descripcion) VALUES
+('Teléfonos', 'Smartphones y equipos móviles'),
+('Laptops', 'Computadoras portátiles'),
+('Accesorios', 'Periféricos y complementos');
+
+-- Insertar clientes 
+INSERT INTO Clientes (nombre, correo_electronico, direccion, numero_telefono) VALUES
+('Juan Pérez', 'juan.perez@gmail.com', 'Av. Insurgentes Sur 123', '5512340101'),
+('María López', 'maria.lopez@gmail.com', 'Paseo de la Reforma 456', '5512340102'),
+('Carlos Gómez', 'carlos.gomez@gmail.com', 'Plaza de la Constitución 789', '5512340103'),
+('Ana Martínez', 'ana.martinez@gmail.com', 'Eje Central Lázaro Cárdenas 321', '5512340104'),
+('Pedro Sánchez', 'pedro.sanchez@gmail.com', 'Calzada de Tlalpan 654', '5512340105'),
+('Laura Díaz', 'laura.diaz@gmail.com', 'Plaza Garibaldi 987', '5512340106'),
+('José Ramírez', 'jose.ramirez@gmail.com', 'Av. Río Churubusco 147', '5512340107'),
+('Sofía Hernández', 'sofia.hernandez@gmail.com', 'Av. Universidad 258', '5512340108'),
+('Miguel Torres', 'miguel.torres@gmail.com', 'Plaza Coyoacán 369', '5512340109'),
+('Lucía Castro', 'lucia.castro@gmail.com', 'Calle Génova 741, Zona Rosa', '5512340110'),
+('Fernando Ruiz', 'fernando.ruiz@gmail.com', 'Av. Patriotismo 852', '5512340111'),
+('Elena Vargas', 'elena.vargas@gmail.com', 'Plaza San Jacinto 963, San Ángel', '5512340112'),
+('Diego Morales', 'diego.morales@gmail.com', 'Av. División del Norte 159', '5512340113'),
+('Patricia Ortiz', 'patricia.ortiz@gmail.com', 'Av. Revolución 357', '5512340114'),
+('Javier Soto', 'javier.soto@gmail.com', 'Plaza Loreto 753, Altavista', '5512340115');
+
+-- Insertar productos 
+INSERT INTO Productos (nombre, descripcion, precio, stock, id_categoria) VALUES
+('iPhone 14', 'Smartphone de alta gama con pantalla Super Retina XDR, chip A15 Bionic, cámara dual de 12 MP, Face ID y resistencia al agua.', 16999.83, 50, 1),
+('Samsung Galaxy S23', 'Teléfono Android de última generación con pantalla AMOLED, procesador Snapdragon 8 Gen 2 y cámara de 50 MP.', 15299.83, 45, 1),
+('MacBook Air', 'Laptop ligera con chip Apple M2, pantalla Retina de 13.6", batería de larga duración y diseño ultra delgado.', 22099.83, 30, 2),
+('Dell XPS 13', 'Laptop potente con procesador Intel Core i7, pantalla InfinityEdge, SSD de 512 GB y cuerpo de aluminio.', 20399.83, 25, 2),
+('Auriculares Bluetooth', 'Accesorio inalámbrico con micrófono integrado, cancelación de ruido pasiva y batería de hasta 10 horas.', 849.83, 100, 3),
+('Teclado Mecánico', 'Teclado para gaming con retroiluminación RGB, switches mecánicos y diseño ergonómico resistente al desgaste.', 1359.83, 80, 3),
+('iPhone 13', 'Smartphone anterior de Apple con excelente rendimiento, cámara dual y pantalla OLED de 6.1".', 13599.83, 40, 1),
+('Lenovo ThinkPad', 'Laptop empresarial confiable con procesador Intel, teclado resistente a derrames y características de seguridad avanzadas.', 18699.83, 20, 2),
+('Mouse inalámbrico', 'Mouse ergonómico con conexión inalámbrica 2.4GHz, diseño cómodo y sensor óptico preciso.', 509.83, 120, 3),
+('Huawei P50', 'Teléfono avanzado con cámara Leica, pantalla OLED de 6.5", y excelente rendimiento en fotografía y video.', 11899.83, 35, 1),
+('Asus ROG', 'Laptop gaming con tarjeta gráfica RTX, pantalla de alta tasa de refresco y sistema de enfriamiento avanzado.', 25499.83, 15, 2),
+('Cargador portátil', 'Cargador de 20W compatible con carga rápida, diseño compacto y seguro para dispositivos móviles.', 679.83, 90, 3),
+('Google Pixel 7', 'Teléfono con IA de Google, cámara avanzada, sistema Android puro y excelente rendimiento en fotografía nocturna.', 15299.83, 30, 1),
+('HP Spectre', 'Laptop ultradelgada con diseño premium, pantalla táctil, lector de huella y batería de larga duración.', 22099.83, 20, 2),
+('Funda protectora', 'Funda para teléfonos con material de silicona resistente, diseño antideslizante y bordes reforzados.', 339.83, 150, 3),
+('OnePlus 11', 'Teléfono rápido con carga ultra rápida, procesador Snapdragon 8 Gen 2 y pantalla AMOLED de 120Hz.', 13599.83, 25, 1),
+('Acer Nitro', 'Laptop gaming con tarjeta NVIDIA, procesador Ryzen y teclado retroiluminado para juegos intensos.', 16999.83, 18, 2),
+('Cable USB-C', 'Cable de carga trenzado, compatible con carga rápida y sincronización de datos.', 254.83, 200, 3),
+('Sony Xperia', 'Teléfono premium con pantalla 4K, sonido Hi-Res, cámara con óptica Zeiss y diseño elegante.', 16149.83, 22, 1),
+('Microsoft Surface', 'Laptop 2 en 1 con pantalla táctil PixelSense, lápiz óptico y teclado desmontable.', 23799.83, 15, 2),
+('Altavoz Bluetooth', 'Altavoz portátil con sonido estéreo, resistencia al agua IPX5 y batería recargable de larga duración.', 1019.83, 70, 3),
+('Xiaomi 13', 'Teléfono económico con gran rendimiento, pantalla AMOLED y sistema de cámaras triple.', 10199.83, 40, 1),
+('Razer Blade', 'Laptop de alto rendimiento para gaming, chasis de aluminio, pantalla QHD y GPU dedicada.', 30599.83, 10, 2),
+('Soporte para teléfono', 'Soporte ajustable con base antideslizante, compatible con la mayoría de smartphones.', 424.83, 110, 3),
+('Oppo Find X5', 'Teléfono con cámara de alto nivel, diseño elegante y pantalla AMOLED con alta tasa de refresco.', 12749.83, 28, 1),
+('Toshiba Satellite', 'Laptop básica ideal para tareas escolares y de oficina, con almacenamiento HDD y pantalla HD.', 11899.83, 25, 2),
+('Batería externa', 'Batería de 10000mAh con doble salida USB y linterna LED, ideal para viajes.', 594.83, 85, 3),
+('Realme GT', 'Teléfono de gama media con gran potencia, buena autonomía y pantalla fluida de 120Hz.', 8499.83, 35, 1),
+('LG Gram', 'Laptop ultraligera con diseño minimalista, batería de larga duración y pantalla de 14".', 20399.83, 20, 2),
+('Auriculares con micrófono', 'Auriculares económicos con cable, micrófono integrado y diseño cómodo para uso prolongado.', 509.83, 95, 3);
+
+-- Insertar pedidos 
+INSERT INTO Pedidos (id_cliente, estado, fecha_pedido) VALUES
+(1, 'pendiente', '2025-07-30'),
+(1, 'enviado', '2025-07-25'),
+(2, 'entregado', '2025-07-20'),
+(3, 'pendiente', '2025-07-15'),
+(4, 'enviado', '2025-07-10'),
+(5, 'entregado', '2025-07-05'),
+(6, 'pendiente', '2025-06-30'),
+(7, 'enviado', '2025-06-27'),
+(8, 'entregado', '2025-06-21'),
+(9, 'pendiente', '2025-06-18'),
+(10, 'enviado', '2025-06-13'),
+(11, 'entregado', '2025-06-10'),
+(12, 'pendiente', '2025-06-05'),
+(13, 'enviado', '2025-06-01'),
+(14, 'entregado', '2025-05-28'),
+(15, 'pendiente', '2025-05-24'),
+(1, 'enviado', '2025-05-20'),
+(2, 'entregado', '2025-05-15'),
+(3, 'pendiente', '2025-05-10'),
+(4, 'enviado', '2025-05-05');
+
+-- Insertar detalles de pedido 
+INSERT INTO Detalles_Pedido (id_pedido, id_producto, cantidad) VALUES
+(1, 1, 1),
+(2, 2, 1),
+(3, 3, 1),
+(4, 4, 1),
+(5, 5, 2),
+(6, 6, 1),
+(7, 7, 1),
+(8, 8, 1),
+(9, 9, 2),
+(10, 10, 1),
+(11, 11, 1),
+(12, 12, 2),
+(13, 13, 1),
+(14, 14, 1),
+(15, 15, 1),
+(16, 16, 1),
+(17, 17, 1),
+(18, 18, 2),
+(19, 19, 1),
+(20, 20, 1),
+(1, 21, 1),
+(2, 22, 1),
+(3, 23, 1),
+(4, 24, 2),
+(5, 25, 1);
+
+-- Insertar reseñas
+INSERT INTO Resenas (id_cliente, id_producto, calificacion, comentario) VALUES
+(1, 1, 5, 'Excelente producto'),
+(2, 2, 4, 'Muy bueno'),
+(3, 3, 5, 'Increíble calidad'),
+(4, 4, 3, 'Regular'),
+(5, 5, 4, 'Buen accesorio'),
+(6, 6, 5, 'Perfecto'),
+(7, 7, 4, 'Satisfecho'),
+(8, 8, 3, 'Aceptable'),
+(9, 9, 5, 'Gran compra'),
+(10, 10, 4, 'Bueno');
